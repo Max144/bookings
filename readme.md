@@ -1,4 +1,4 @@
-# Booking and Reservations Aoo
+# Booking and Reservations Project
 
 This is the test repository for booking and reservations projects
 
