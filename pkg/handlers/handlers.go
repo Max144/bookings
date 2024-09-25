@@ -41,3 +41,23 @@ func (m *Repository) About(w http.ResponseWriter, r *http.Request) {
 		StringMap: stringMap,
 	})
 }
+
+func (m *Repository) Contact(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, "contact.page.tmpl", &models.TemplateData{})
+}
+
+func (m *Repository) Reservation(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, "reservation.page.tmpl", &models.TemplateData{})
+}
+
+func (m *Repository) StandardRoom(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, "standard-room.page.tmpl", &models.TemplateData{})
+}
+
+func (m *Repository) DeluxeRoom(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, "deluxe-room.page.tmpl", &models.TemplateData{})
+}
+
+func (m *Repository) FamilyRoom(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, "family-room.page.tmpl", &models.TemplateData{})
+}

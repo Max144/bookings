@@ -1,12 +1,15 @@
 {{template "base" .}}
-
-{{define "title"}}Homepage{{end}}
+{{define "title"}}Deluxe room{{end}}
 {{define "content"}}
-    {{template "carousel" .}}
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1 class="text-center mt-4">Welcome to Harbor View Hotel!</h1>
+                <img src="/static/images/room-images/deluxe.png" class="img-fluid img-thumbnail mx-auto d-block w-50" alt="Standard Room">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center mt-4">Deluxe Room</h1>
                 <p>Welcome to Harbor View Hotel, where breathtaking vistas meet unparalleled comfort. Nestled along the serene coastline, our hotel offers a perfect blend of luxury and relaxation, making it an ideal getaway for families, couples, and solo travelers alike.</p>
                 <p><b>Accommodations:</b> Each of our elegantly designed rooms features panoramic views of the harbor, allowing you to wake up to the gentle sound of waves and the sight of stunning sunsets. With modern amenities, plush furnishings, and a warm, inviting atmosphere, every stay promises a restful retreat.</p>
                 <p><b>Dining:</b> Savor delectable cuisine at our on-site restaurant, where fresh, local ingredients meet culinary artistry. Enjoy a meal on the terrace while taking in the picturesque harbor views, or indulge in room service for a cozy dining experience.</p>
@@ -18,7 +21,7 @@
 
         <div class="row mb-4">
             <div class="col text-center">
-                <a href="/make-reservation" class="btn btn-primary" role="button">Make Reservation Now</a>
+                <a href="/make-reservation-deluxe" class="btn btn-primary" role="button">Check Availability</a>
             </div>
         </div>
     </div>
