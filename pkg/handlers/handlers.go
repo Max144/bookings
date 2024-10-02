@@ -50,6 +50,10 @@ func (m *Repository) Reservation(w http.ResponseWriter, r *http.Request) {
 	render.RenderTemplate(w, "reservation.page.tmpl", &models.TemplateData{})
 }
 
+func (m *Repository) ReservationMake(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, "reservation-make.page.tmpl", &models.TemplateData{})
+}
+
 func (m *Repository) StandardRoom(w http.ResponseWriter, r *http.Request) {
 	render.RenderTemplate(w, "standard-room.page.tmpl", &models.TemplateData{})
 }

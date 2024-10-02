@@ -1,0 +1,42 @@
+{{template "base" .}}
+
+{{define "title"}}Reservation page{{end}}
+{{define "content"}}
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1>Reservation page</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <form action="" method="post" novalidate>
+                    <div class="mb-3">
+                        <label for="first_name" class="form-label">First Name:</label>
+                        <input type="text" class="form-control" id="first_name" name="first_name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="last_name" class="form-label">Last Name:</label>
+                        <input type="text" class="form-control" id="last_name" name="last_name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="last_name" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone:</label>
+                        <input type="text" class="form-control" id="phone" name="phone" required>
+                    </div>
+
+                    <hr>
+
+                    <button type="submit" class="btn btn-primary">Book now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{{end}}
