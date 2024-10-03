@@ -43,7 +43,7 @@
         </div>
     </div>
     <div class="modal" tabindex="-1" id="reservation-modal">
-        <form action="reservation-make" method="get" class="needs-validation" novalidate>
+        <form action="/reservation" method="get" class="needs-validation" novalidate>
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -86,20 +86,6 @@
     <script>
         (() => {
             'use strict'
-
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            const forms = document.querySelectorAll('.needs-validation')
-            // Loop over them and prevent submission
-            Array.from(forms).forEach(form => {
-                form.addEventListener('submit', event => {
-                    if (!form.checkValidity()) {
-                        event.preventDefault()
-                        event.stopPropagation()
-                    }
-
-                    form.classList.add('was-validated')
-                }, false)
-            })
 
             const dateRange = document.getElementById('date-range');
             new DateRangePicker(dateRange, {

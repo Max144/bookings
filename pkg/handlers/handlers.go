@@ -51,7 +51,7 @@ func (m *Repository) SearchAvailability(w http.ResponseWriter, r *http.Request) 
 }
 
 func (m *Repository) ReservationMake(w http.ResponseWriter, r *http.Request) {
-	render.RenderTemplate(w, "reservation-make.page.tmpl", &models.TemplateData{})
+	render.RenderTemplate(w, "reservation.page.tmpl", &models.TemplateData{})
 }
 
 func (m *Repository) StandardRoom(w http.ResponseWriter, r *http.Request) {
